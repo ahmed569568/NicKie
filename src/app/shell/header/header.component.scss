@@ -1,0 +1,46 @@
+@import "src/theme/theme-variables";
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: $mainColor;
+  color: $fontColor;
+  padding: 40px;
+  display: flex;
+}
+
+.brand {
+  color: mat-color($app-primary, "default-contrast");
+  text-decoration: none;
+  color: $fontColor;
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 40px;
+  i {
+    font-size: 60px;
+    color: $childColor;
+    font-weight: bold;
+  }
+}
+
+.active {
+  background-color: $buttonColor;
+  color: $mainColor;
+}
+
+.menu-button {
+  margin-right: 1rem;
+}
+
+button {
+  font-size: 22px;
+  text-transform: capitalize;
+  margin-left: 15px;
+  &:hover {
+    background-color: $childColor;
+    color: $mainColor;
+    transition: 0.5s ease-out;
+  }
+}

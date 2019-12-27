@@ -1,0 +1,28 @@
+@import "src/theme/theme-variables";
+.card {
+  text-align: center;
+  padding: 50px;
+  background: $backgroundColor;
+  h1 {
+    font-size: 40px;
+  }
+  i {
+    font-size: 50px;
+    color: $buttonColor;
+    margin-top: 25px;
+  }
+  h3 {
+    color: $fontColor;
+  }
+  p {
+    color: $pColor;
+    font-size: 18px;
+  }
+  mat-card {
+    height: 300px;
+    &:hover {
+      background-color: $childColor;
+      transition: 2s ease-in-out;
+    }
+  }
+}
